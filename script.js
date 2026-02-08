@@ -160,4 +160,19 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', toggleMenu);
         });
     }
+
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(q => {
+        q.addEventListener('click', () => {
+            const item = q.parentElement;
+            // Close others
+            faqQuestions.forEach(other => {
+                if (other !== q) {
+                    other.parentElement.classList.remove('active');
+                }
+            });
+            item.classList.toggle('active');
+        });
+    });
 });
