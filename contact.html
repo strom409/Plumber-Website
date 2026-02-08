@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Desk & Locations | JalSeva J&K</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="mainHeader" class="scrolled">
+        <div class="logo" onclick="window.location.href='index.html'">JALSEVA J&K</div>
+        <nav class="navbar" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="plumbers.html">Our Experts</a>
+            <a href="about.html">Expertise</a>
+            <a href="contact.html">Support</a>
+        </nav>
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <button class="lang-switch" id="langBtn"
+                style="border: 1px solid #ddd; background: white; padding: 8px 15px; border-radius: 20px; cursor: pointer;">EN</button>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main>
+        <!-- HERO -->
+        <section style="background: var(--bg-pristine); padding-top: 150px; padding-bottom: 50px;">
+            <div class="section-title">
+                <span
+                    style="color: var(--accent-saffron); font-weight: 800; text-transform: uppercase; font-size: 14px; letter-spacing: 2px;">24/7
+                    Response Desk</span>
+                <h1 style="font-size: 48px; margin-top: 10px;">WE'RE HERE TO HELP</h1>
+                <p>Urgent plumbing issues shouldn't wait. Our dispatch center is active 24/7 across Jammu & Kashmir.</p>
+            </div>
+        </section>
+
+        <!-- OFFICE LOCATIONS -->
+        <section style="background: white;">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto;">
+                <div class="service-card" style="border-left: 5px solid var(--primary-navy);">
+                    <h3 style="margin-bottom: 15px;">SRINAGAR REGIONAL HUB</h3>
+                    <div style="font-size: 14px; color: var(--text-muted);">
+                        <p style="margin-bottom: 5px;">📍 2nd Floor, Residency Road, Opposite SBI, Srinagar, J&K -
+                            190001</p>
+                        <p style="margin-bottom: 5px;">📞 0194 - 2XXXXXX (Admin Area)</p>
+                        <p>📧 srinagar.support@jalseva.in</p>
+                    </div>
+                    <div style="margin-top: 20px; color: var(--accent-saffron); font-weight: 700; font-size: 13px;">
+                        ACTIVE SERVICE ZONE: DAL LAKE TO QAMARWARI</div>
+                </div>
+                <div class="service-card" style="border-left: 5px solid var(--primary-navy);">
+                    <h3 style="margin-bottom: 15px;">JAMMU REGIONAL HUB</h3>
+                    <div style="font-size: 14px; color: var(--text-muted);">
+                        <p style="margin-bottom: 5px;">📍 Gandhi Nagar Market, Near Gole Market, Jammu, J&K - 180004</p>
+                        <p style="margin-bottom: 5px;">📞 0191 - 2XXXXXX (General Inquiry)</p>
+                        <p>📧 jammu.support@jalseva.in</p>
+                    </div>
+                    <div style="margin-top: 20px; color: var(--accent-saffron); font-weight: 700; font-size: 13px;">
+                        ACTIVE SERVICE ZONE: JANIPUR TO BARI BRAHMANA</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT FORM & EMERGENCY -->
+        <section style="background: var(--bg-soft);">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px; max-width: 1100px; margin: 0 auto; align-items: start;">
+                <div
+                    style="background: white; padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-premium);">
+                    <h2 style="margin-bottom: 25px;">REQUEST A PLUMBER</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Full Name" required style="padding: 15px;">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+91 XXXXX XXXXX" required style="padding: 15px;">
+                        </div>
+                        <div class="form-group">
+                            <label>Select Category</label>
+                            <select
+                                style="width:100%; padding:15px; border:1px solid #ddd; border-radius:var(--radius-md);">
+                                <option>Winter Emergencies</option>
+                                <option>Tap / Pipe Leakage</option>
+                                <option>Toilet / Bath Repair</option>
+                                <option>Water Tank Cleaning</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Detailed Note</label>
+                            <textarea rows="4" placeholder="How can we help you?"
+                                style="padding: 15px; border-radius:var(--radius-md);"></textarea>
+                        </div>
+                        <button type="submit" class="btn-premium btn-primary"
+                            style="width:100%; justify-content:center; padding:20px;">BOOK TECHNICIAN</button>
+                    </form>
+                </div>
+
+                <div>
+                    <h2 style="margin-bottom: 25px;">DISTRICT HELPLINES</h2>
+                    <ul style="list-style: none;">
+                        <li
+                            style="background: white; padding: 20px; border-radius: var(--radius-md); margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong style="display: block;">KUPWARA & BARAMULLA</strong>
+                                <span style="font-size: 13px; color: var(--text-muted);">North Zone Dispatch</span>
+                            </div>
+                            <a href="tel:1800123456"
+                                style="color: var(--primary-navy); font-weight: 800; text-decoration: none;">CALL
+                                NOW</a>
+                        </li>
+                        <li
+                            style="background: white; padding: 20px; border-radius: var(--radius-md); margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong style="display: block;">ANANTNAG & PULWAMA</strong>
+                                <span style="font-size: 13px; color: var(--text-muted);">South Zone Dispatch</span>
+                            </div>
+                            <a href="tel:1800123456"
+                                style="color: var(--primary-navy); font-weight: 800; text-decoration: none;">CALL
+                                NOW</a>
+                        </li>
+                        <li
+                            style="background: white; padding: 20px; border-radius: var(--radius-md); margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong style="display: block;">KATHUA & SAMBA</strong>
+                                <span style="font-size: 13px; color: var(--text-muted);">Industrial Zone Dispatch</span>
+                            </div>
+                            <a href="tel:1800123456"
+                                style="color: var(--primary-navy); font-weight: 800; text-decoration: none;">CALL
+                                NOW</a>
+                        </li>
+                    </ul>
+
+                    <div
+                        style="background: var(--primary-navy); color: white; padding: 30px; border-radius: var(--radius-lg); margin-top: 40px;">
+                        <h4 style="color: var(--accent-saffron); margin-bottom: 10px;">ESCALATION MATRIX</h4>
+                        <p style="font-size: 13px; opacity: 0.8; line-height: 1.6;">If your plumber doesn't arrive
+                            within 1 hour or the quality is not satisfactory, please contact our Nodal Officer directly
+                            at <strong>nodal.officer@jalseva.in</strong> or call our dedicated grievance line:
+                            <strong>+91 XXXXX XXXX</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section style="background: white;">
+            <div class="section-title">
+                <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                <p>Quick answers to common queries about our services in J&K.</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                    <h4 style="margin-bottom: 10px;">How long does it take for a plumber to arrive?</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">In city limits (Jammu & Srinagar), we
+                        guarantee arrival within 1 hour. For other districts, it ranges between 1.5 to 2 hours depending
+                        on road conditions.</p>
+                </div>
+                <div style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                    <h4 style="margin-bottom: 10px;">Do you provide services during heavy snowfall?</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Yes, our "Winter Shield" teams are
+                        specifically equipped for sub-zero operations and active snowfall. We stay active even when the
+                        Valley is white.</p>
+                </div>
+                <div style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                    <h4 style="margin-bottom: 10px;">Is there a warranty on your repairs?</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Every JalSeva job comes with a 15-day service
+                        guarantee. If the same problem recurs, we fix it for free.</p>
+                </div>
+                <div style="padding: 20px 0;">
+                    <h4 style="margin-bottom: 10px;">What are the inspection charges?</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">We have a nominal inspection fee of ₹150.
+                        However, if you proceed with the suggested repair, the inspection fee is completely waived off.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div
+            style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding: 40px; background: var(--primary-navy); color: white; font-size: 12px; opacity: 0.6;">
+            &copy; 2026 JALSEVA J&K. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

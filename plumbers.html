@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verified Experts | JalSeva J&K</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="mainHeader" class="scrolled">
+        <div class="logo" onclick="window.location.href='index.html'">JALSEVA J&K</div>
+        <nav class="navbar" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="plumbers.html">Our Experts</a>
+            <a href="about.html">Expertise</a>
+            <a href="contact.html">Support</a>
+        </nav>
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <button class="lang-switch" id="langBtn"
+                style="border: 1px solid #ddd; background: white; padding: 8px 15px; border-radius: 20px; cursor: pointer;">EN</button>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main>
+        <!-- HERO -->
+        <section style="background: var(--bg-pristine); padding-top: 150px; padding-bottom: 50px;">
+            <div class="section-title">
+                <span
+                    style="color: var(--accent-saffron); font-weight: 800; text-transform: uppercase; font-size: 14px; letter-spacing: 2px;">Elite
+                    Professionals</span>
+                <h1 id="plumbersHeading" style="font-size: 48px; margin-top: 10px;">OUR VERIFIED EXPERTS</h1>
+                <p>Only the top 5% of J&K's plumbers pass our stringent 25-point verification process.</p>
+            </div>
+        </section>
+
+        <!-- VERIFICATION INFOGRAPHIC -->
+        <section style="background: var(--primary-navy); color: white; border-radius: 0;">
+            <div class="section-title">
+                <h2 style="color: white;">THE 5-STEP ELITE VERIFICATION</h2>
+                <p style="color: rgba(255,255,255,0.7);">How we ensure you only get the best professional at your home.
+                </p>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 40px;">
+                <div style="text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">📜</div>
+                    <h4 style="color: var(--accent-saffron);">KYC & Background</h4>
+                    <p style="font-size: 13px; opacity: 0.7;">Full verification of Aadhar, experience certificates, and
+                        police clearance.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">⚒️</div>
+                    <h4 style="color: var(--accent-saffron);">Skill Field Test</h4>
+                    <p style="font-size: 13px; opacity: 0.7;">A practical 4-hour field assessment monitored by our
+                        senior technical team.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">❄️</div>
+                    <h4 style="color: var(--accent-saffron);">Winter Specialization</h4>
+                    <p style="font-size: 13px; opacity: 0.7;">Technicians must prove competence in handling frozen water
+                        lines safely.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">💬</div>
+                    <h4 style="color: var(--accent-saffron);">Behavioral Training</h4>
+                    <p style="font-size: 13px; opacity: 0.7;">3-day training on customer etiquette, hygiene, and safe
+                        workplace practices.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">📊</div>
+                    <h4 style="color: var(--accent-saffron);">Trial Performance</h4>
+                    <p style="font-size: 13px; opacity: 0.7;">Initial 5 jobs are strictly monitored for customer
+                        feedback and quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIRECTORY SECTION -->
+        <section style="background: var(--bg-soft);">
+            <div
+                style="margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <div>
+                    <h2 style="font-size: 24px;">ACTIVE EXPERTS DIRECTORY</h2>
+                    <p style="font-size: 14px; color: var(--text-muted);">Real-time availability of verified
+                        professionals.</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn-premium"
+                        style="padding: 10px 20px; font-size: 13px; background: white; border: 1px solid #ddd;">All
+                        Cities</button>
+                    <button class="btn-premium"
+                        style="padding: 10px 20px; font-size: 13px; background: white; border: 1px solid #ddd;">Top
+                        Rated</button>
+                </div>
+            </div>
+
+            <div class="plumber-grid" id="plumberList">
+                <!-- Dynamic Content via script.js -->
+            </div>
+        </section>
+
+        <!-- BECOME A PARTNER TEASER -->
+        <section style="background: white;">
+            <div
+                style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; justify-content: center; background: #FFF9F2; padding: 60px; border-radius: var(--radius-lg); box-shadow: var(--shadow-premium);">
+                <div style="max-width: 500px;">
+                    <h2 style="margin-bottom: 15px;">ARE YOU A SKILLED PLUMBER?</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 25px;">Join the Valley's fastest-growing service
+                        platform. Get steady work, insurance, and professional training. We value your skills.</p>
+                    <button class="btn-premium btn-primary">Apply as a Partner</button>
+                </div>
+                <div style="font-size: 120px;">🛡️</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="margin-top: 100px;">
+        <div class="footer-grid">
+            <div>
+                <div class="logo" style="color: white; margin-bottom: 20px;">JALSEVA J&K</div>
+                <p style="opacity: 0.7; font-size: 14px; margin-bottom: 30px;">Reliable plumbing solutions for the
+                    unique needs of Jammu & Kashmir households.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px;">NAVIGATE</h4>
+                <ul style="list-style: none; opacity: 0.7;">
+                    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li><a href="plumbers.html" style="color: white; text-decoration: none;">Experts</a></li>
+                    <li><a href="about.html" style="color: white; text-decoration: none;">Expertise</a></li>
+                    <li><a href="contact.html" style="color: white; text-decoration: none;">Support Desk</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px;">SERVICE HUBS</h4>
+                <ul style="list-style: none; opacity: 0.7;">
+                    <li style="margin-bottom: 10px;">Jammu City</li>
+                    <li style="margin-bottom: 10px;">Srinagar HQ</li>
+                    <li style="margin-bottom: 10px;">Anantnag</li>
+                    <li style="margin-bottom: 10px;">Udhampur</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
